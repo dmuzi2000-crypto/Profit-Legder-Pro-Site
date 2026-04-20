@@ -58,10 +58,10 @@ export default function FeatureStrip() {
   return (
     <section className="w-full bg-[#111827]" style={{ borderTop: '1px solid #1e293b', borderBottom: '1px solid #1e293b' }}>
       <ScrollReveal>
-        <div className="max-w-[800px] mx-auto px-6 py-8">
-          <div className="flex flex-wrap justify-center md:justify-between gap-6 md:gap-4">
+        <div className="max-w-6xl mx-auto px-6 py-8">
+          <div className="flex flex-wrap justify-center gap-8 md:gap-12">
             {features.map((feature, i) => (
-              <div key={i} className="flex flex-col items-center gap-2 min-w-[100px]">
+              <div key={i} className="flex flex-col items-center gap-2 min-w-[120px] max-w-[160px] text-center">
                 <span className="text-[#10b981]">{feature.icon}</span>
                 <span className="text-xs font-medium text-[#94a3b8] uppercase tracking-wide">
                   {feature.label}
