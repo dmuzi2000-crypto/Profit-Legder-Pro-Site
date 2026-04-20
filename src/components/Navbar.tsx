@@ -64,12 +64,12 @@ export default function Navbar() {
 
         {/* CTAs */}
         <div className="flex items-center gap-3">
-          <button className="hidden sm:block text-sm font-medium text-[#94a3b8] hover:text-[#f1f5f9] transition-colors duration-200">
+          <a href={`${import.meta.env.VITE_APP_URL}/auth?mode=signin`} className="hidden sm:block text-sm font-medium text-[#94a3b8] hover:text-[#f1f5f9] transition-colors duration-200">
             Sign In
-          </button>
-          <button className="text-sm font-semibold bg-[#10b981] text-[#0c1222] px-5 py-2 rounded-lg hover:bg-[#059669] hover:scale-[1.02] transition-all duration-200">
+          </a>
+          <a href={`${import.meta.env.VITE_APP_URL}/auth?mode=signup`} className="text-sm font-semibold bg-[#10b981] text-[#0c1222] px-5 py-2 rounded-lg hover:bg-[#059669] hover:scale-[1.02] transition-all duration-200">
             Get Started Free
-          </button>
+          </a>
         </div>
       </div>
     </nav>

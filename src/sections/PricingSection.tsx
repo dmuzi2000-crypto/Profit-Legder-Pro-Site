@@ -116,15 +116,16 @@ export default function PricingSection() {
                     ))}
                   </ul>
 
-                  <button
-                    className={`w-full py-3 rounded-lg font-medium text-sm transition-all duration-200 ${
+                  <a
+                    href={`${import.meta.env.VITE_APP_URL}/auth?mode=signup`}
+                    className={`block text-center w-full py-3 rounded-lg font-medium text-sm transition-all duration-200 ${
                       plan.ctaStyle === 'primary'
                         ? 'bg-[#10b981] text-[#0c1222] hover:bg-[#059669] hover:scale-[1.02]'
                         : 'border border-[#1e293b] text-[#94a3b8] hover:border-[#10b981] hover:text-[#f1f5f9]'
                     }`}
                   >
                     {plan.cta}
-                  </button>
+                  </a>
                 </div>
               </div>
             </ScrollReveal>

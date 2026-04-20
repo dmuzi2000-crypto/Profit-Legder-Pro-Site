@@ -40,12 +40,12 @@ export default function Footer() {
             >
               Roadmap
             </button>
-            <button className="text-sm text-[#94a3b8] hover:text-[#f1f5f9] transition-colors duration-200">
+            <a href={`${import.meta.env.VITE_APP_URL}/auth?mode=signin`} className="text-sm text-[#94a3b8] hover:text-[#f1f5f9] transition-colors duration-200">
               Sign In
-            </button>
-            <button className="text-sm text-[#94a3b8] hover:text-[#f1f5f9] transition-colors duration-200">
+            </a>
+            <a href={`${import.meta.env.VITE_APP_URL}/auth?mode=signup`} className="text-sm text-[#94a3b8] hover:text-[#f1f5f9] transition-colors duration-200">
               Create Account
-            </button>
+            </a>
           </div>
         </div>
 

@@ -56,12 +56,12 @@ export default function HeroSection() {
             </p>
 
             <div className="flex flex-wrap gap-4 mt-10" style={{ opacity: 0 }}>
-              <button className="px-7 py-3.5 bg-[#10b981] text-[#0c1222] font-semibold text-base rounded-lg hover:bg-[#059669] hover:scale-[1.02] transition-all duration-200">
+              <a href={`${import.meta.env.VITE_APP_URL}/auth?mode=signup`} className="inline-block flex items-center justify-center px-7 py-3.5 bg-[#10b981] text-[#0c1222] font-semibold text-base rounded-lg hover:bg-[#059669] hover:scale-[1.02] transition-all duration-200">
                 Start free — no card required
-              </button>
-              <button className="px-7 py-3.5 border border-[#1e293b] text-[#94a3b8] font-medium text-base rounded-lg hover:border-[#10b981] hover:text-[#f1f5f9] transition-all duration-200">
+              </a>
+              <a href={`${import.meta.env.VITE_APP_URL}/auth?mode=signup`} className="inline-block flex items-center justify-center px-7 py-3.5 border border-[#1e293b] text-[#94a3b8] font-medium text-base rounded-lg hover:border-[#10b981] hover:text-[#f1f5f9] transition-all duration-200">
                 Watch demo
-              </button>
+              </a>
             </div>
 
             <p className="text-sm text-[#64748b] mt-6" style={{ opacity: 0 }}>
